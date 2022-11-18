@@ -399,10 +399,10 @@ certain amount of noise will be added to each output key's aggregate value.
 
 Currently the aggregation service can be deployed on Amazon Web Services (AWS). We expect to support Google Cloud Platform (GCP) and other cloud providers in the future.
 
-Trigger registration will accept an optional string field `aggregation_coordinator_identifier` to allow developers to specify the deployment option for the aggregation service. The default value is `aws_cloud`. `gcp_cloud` and other values will be supported in the future.
+Trigger registration will accept an optional string field `aggregation_coordinator_identifier` to allow developers to specify the deployment option for the aggregation service. The default value is `aws-cloud`. `gcp-cloud` and other values will be supported in the future.
 
 ```http
-Attribution-Reporting-Register-Trigger: {..., "aggregatable_trigger_data": ..., "aggregatable_values": ..., "aggregation_coordinator_identifier": "aws_cloud"}
+Attribution-Reporting-Register-Trigger: {..., "aggregatable_trigger_data": ..., "aggregatable_values": ..., "aggregation_coordinator_identifier": "aws-cloud"}
 ```
 
 
